@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="A minimal and cute page for Pookie">
+    <title>For My Pookie 💙</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ADD8E6; /* Very light blue */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* No scroll for iPhone X */
+            animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in effect for the whole page */
+        }
+
+        .content {
+            max-width: 375px; /* Fits iPhone X width */
+            padding: 20px;
+            animation: slideIn 1.5s ease-out forwards; /* Slide content in */
+        }
+
+        h1 {
+            font-size: 2.8em; /* Larger for emphasis */
+            color: #FFB6C1; /* Light pink */
+            margin-bottom: 20px;
+            animation: fadeInText 2s ease-in-out forwards; /* Fade-in for title */
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.4em; /* Bigger text */
+            color: #8A2BE2; /* Soft pastel purple */
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeInText 2.5s ease-out forwards; /* Fade-in for text */
+            font-weight: bold;
+        }
+
+        .love-note {
+            font-size: 1.6em; /* Bigger text */
+            color: #FF69B4; /* Cute hot pink */
+            opacity: 0;
+            animation: fadeInText 3s ease-out forwards; /* Fade-in delay for love note */
+            font-weight: bold;
+        }
+
+        .butterflies {
+            font-size: 2.5em; /* Slightly bigger */
+            margin: 20px 0;
+            color: #9370DB; /* Pastel purple */
+            animation: pulse 2s infinite; /* Pulsing butterflies */
+            font-weight: bold;
+        }
+
+        iframe {
+            display: none; /* Keeps the autoplay music hidden */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Slide from below */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInBackground {
+            0% {
+                background-color: #ffffff; /* Fade from white */
+            }
+            100% {
+                background-color: #ADD8E6; /* Light blue */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>For My Pookie 💙</h1>
+        <p>We met on August 26, 2024, and my world has been brighter ever since.</p>
+        <p>Every day with you feels magical. I love your smile, your kindness, and your passion.</p>
+        <p class="love-note">Pookie, I love you more than words can say. 💖</p>
+        <div class="butterflies">🦋 🦋 🦋</div>
+    </div>
+
+    <!-- Embedded YouTube video for background music -->
+    <iframe
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/6oH-w-9t-dg?autoplay=1&loop=1&playlist=6oH-w-9t-dg&mute=1"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen
+    ></iframe>
+</body>
+</html>
